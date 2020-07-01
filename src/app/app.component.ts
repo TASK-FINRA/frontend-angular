@@ -18,6 +18,7 @@ export class AppComponent {
   phoneNumber: any;
   totalResults: any;
   count: number;
+  // make a request to backend by appending the phoneNumber entered by the user and display first page list with size 10
   // tslint:disable-next-line:typedef
   getAlNumNumbers(phoneNumber) {
 
@@ -35,6 +36,8 @@ export class AppComponent {
       }
     });
   }
+
+  // make a request to backend evertime when user hits next button and diplay the next page list with size 10
   // tslint:disable-next-line:typedef
   getNextSet(phoneNumber) {
     this.count = this.count + 1;
